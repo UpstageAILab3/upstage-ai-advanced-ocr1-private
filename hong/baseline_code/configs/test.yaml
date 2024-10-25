@@ -1,0 +1,14 @@
+defaults:
+  - _self_
+  - preset:
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+seed: 42
+exp_name: "resnet50_null_extracted"
+project_name: "resnet50_null_extracted"
+
+wandb: False
+exp_version: "v1.0"
+
+checkpoint_path: null
