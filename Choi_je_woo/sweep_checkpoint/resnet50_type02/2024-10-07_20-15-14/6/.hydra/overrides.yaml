@@ -1,0 +1,5 @@
+- preset=example
+- exp_name=resnet50_type02
+- wandb=True
+- models.optimizer.lr=0.003
+- models.optimizer.weight_decay=0.0001
