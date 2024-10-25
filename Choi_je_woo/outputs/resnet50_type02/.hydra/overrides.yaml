@@ -1,0 +1,3 @@
+- preset=example
+- checkpoint_path='/root/outputs/resnet50_type02/checkpoints/0.002_0.0001_100/epoch=12-step=2665.ckpt'
+- exp_name=resnet50_type02

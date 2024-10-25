@@ -1,0 +1,25 @@
+dataset_path: ocr.datasets
+model_path: ocr.models
+encoder_path: ocr.models.encoder
+decoder_path: ocr.models.decoder
+head_path: ocr.models.head
+loss_path: ocr.models.loss
+lightning_path: ocr.lightning_modules
+
+hydra:
+  # run:
+  #   dir: 'outputs/${exp_name}'
+  run:
+    # Output directory for normal runs
+    dir: 'outputs/${exp_name}'
+  sweep:
+    # Output directory for sweep runs
+    dir: 'sweep_checkpoint/${exp_name}/${now:%Y-%m-%d_%H-%M-%S}'
+    # Output sub directory for sweep runs.
+    subdir: ${hydra.job.id}
+  
+
+log_dir: 'outputs/${exp_name}/logs'
+# checkpoint_dir: 'outputs/${exp_name}/checkpoints'
+checkpoint_dir: 'outputs/${exp_name}/checkpoints/'
+submission_dir: 'outputs/${exp_name}/submissions'

@@ -1,0 +1,6 @@
+- preset=example
+- exp_name=resnet50_type08
+- wandb=True
+- models.optimizer.lr=0.001
+- models.optimizer.weight_decay=0.0001
+- models.scheduler.step_size=100
