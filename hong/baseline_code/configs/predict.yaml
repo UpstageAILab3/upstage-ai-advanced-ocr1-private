@@ -1,0 +1,11 @@
+defaults:
+  - _self_
+  - preset:
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+seed: 42
+exp_name: "resnet50_null_extracted"
+
+checkpoint_path: /data/ephemeral/home/baseline_code/outputs/resnet50_null_extracted/checkpoints/epoch=33-step=27812.ckpt
+minified_json: False
